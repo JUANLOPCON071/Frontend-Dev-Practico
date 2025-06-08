@@ -22,13 +22,58 @@
             margin: 0;
             font-family: "Quicksand", sans-serif;
         }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            padding: 0 24px;
+        }
+        .menu {
+            display: none;
+        }
+        .logo {
+            width: 100px;
+        }
+        .navbar-left {
+            display: flex;
+            align-items: center;
+        }
+        .navbar-left ul {
+            margin-left: 12px;
+        }
+        .navbar-left ul,
+        .navbar-right ul {
+            list-style: none;
+            padding: 0;
+            margin-top: 0;
+            display: flex;
+            align-items: center;
+        }
+        .navbar-left ul li a {
+            text-decoration: none;
+            color: var(--very-light-pink);
+            border: 1px solid var(--white);
+            padding: 8px;
+            border-radius: 8px;
+        }
+        .navbar-left ul li a:hover {
+            border: 1px solid var(--hopital-green);
+            color: var(--hopital-green);
+        }
+        .navbar-email {
+            color: var(--very-light-pink);
+            font-size: var(--sm);
+        }
     </style>
 </head>
 <body>
     <nav>
-        <img src="./icons/icon_menu.svg" alt="manu" class="menu">
+        <img src="./icons/icon_menu.svg" alt="manu" 
+            class="menu"
+        >
         <div class="navbar-left">
-            <img src="./logos/logo_yard_sale.svg" alt="logo" class="logo">
+            <img src="./logos/logo_yard_sale.svg" alt="logo" 
+                class="logo"
+            >
             <ul>
                 <li>
                     <a href="/">All</a>
@@ -52,9 +97,12 @@
         </div>
         <div class="navbar-right">
             <ul>
-                <li>juan@gmail.com</li>
+                <li class="navbar-email">juan@gmail.com</li>
                 <li class="navbar-shopping-cart">
-                    <img src="./icons/icon_shopping_cart.svg" alt="shopping-cart">
+                    <img 
+                        src="./icons/icon_shopping_cart.svg" 
+                        alt="shopping-cart"
+                    >
                     <div>2</div>
                 </li>
             </ul>
